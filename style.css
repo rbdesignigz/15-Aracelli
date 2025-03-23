@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background-color: #e4e3db;
+
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+#alias {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #706e05;
+}
+
+#linea { 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#textport {
+    color: rgb(255, 255, 255);
+    font-size: 70px;
+}
+
+header.portada {
+    position: relative; /* Importante para posicionar el texto encima */
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+header.portada img {
+    width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto; /* La altura se ajusta proporcionalmente */
+    display: block; /* Elimina espacios innecesarios debajo de la imagen */
+}
+
+header.portada .portada-contenido {
+    position: absolute; /* Posiciona el texto encima de la imagen */
+    top: 50%; /* Centra verticalmente el texto */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%); /* Ajusta el centrado exacto */
+    color: white; /* Color del texto */
+    text-align: center; /* Alinea el texto al centro */
+    padding: 20px; /* Añade un poco de espacio alrededor del texto */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+/* Opcional: añade un fondo semitransparente para mejorar la legibilidad del texto */
+header.portada::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según sea necesario */
+    z-index: 0; /* Asegura que el fondo esté detrás del texto */
+}
+
+
+
+.contador {
+    padding: 20px;
+    color: #696814;
+    background-color: #90939765;
+    
+    border-radius: 10px;
+    margin: 15px;
+}
+
+
+
+.informacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center;
+    background-color: #e4e3db;
+}
+
+/* .section.informacion .tarjeta {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #242424;
+    background-color: #007bff;
+} */
+
+.tarjeta{
+
+    
+    width: 80%;
+    margin: 15px;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: #90939765;
+}
+
+.galeria{
+    background-color: #e4e3db;
+}
+
+.section.galeria {
+    
+    /*width: 200px;*/
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+.section.galeria .galeria-fotos {
+
+    
+    width: 100%;
+    height: 80px;
+}
+
+#fot1 {
+    width: 100%;
+    height: auto;
+}
+.section.galeria .galeria-fotos img {
+    
+    
+    width: 100%;
+    height: auto;
+    
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-family: "bebas neue";
+}
+
+
+/*boton flotante*/
+.boton-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #adb48a98; /* Color de fondo del botón */
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.boton-flotante img {
+    width: 40px;
+    height: 40px;
+    filter: invert(1); /* Invierte el color del icono para que se vea bien en el fondo */
+}
+/*boton flotante fin*/
