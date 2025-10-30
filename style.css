@@ -9,7 +9,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 30px;
+    font-size: 25px;
     background-color: #e4e3db;
 
     margin: 0;
@@ -44,8 +44,8 @@ header.portada {
 }
 
 header.portada img {
-    width: 100%; /* La imagen se ajusta al ancho del contenedor */
-    height: auto; /* La altura se ajusta proporcionalmente */
+    width: 120%; /* La imagen se ajusta al ancho del contenedor */
+    height: 70vh; /* La altura se ajusta proporcionalmente */
     display: block; /* Elimina espacios innecesarios debajo de la imagen */
 }
 
