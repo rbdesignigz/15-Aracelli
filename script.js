@@ -1,5 +1,5 @@
 // Configura la fecha del evento
-const fechaEvento = new Date("2025-04-12T20:00:00"); // Ejemplo: 25 de diciembre de 2024 a las 7:00 PM
+const fechaEvento = new Date("2026-02-07T21:00:00"); // Ejemplo: 25 de diciembre de 2024 a las 7:00 PM
 
 function actualizarCuentaRegresiva() {
   const ahora = new Date().getTime();
@@ -40,4 +40,5 @@ botonMusica.addEventListener("click", () => {
         reproduciendo = true;
         iconoMusica.src = "altavoz.png"; // Cambia el icono a un altavoz
     }
+
 });
